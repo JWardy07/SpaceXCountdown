@@ -1,138 +1,105 @@
+<!-- privacy.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SpaceX Countdown Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for SpaceX Countdown." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booster Countdown Privacy Policy</title>
   <style>
     :root {
-      --bg-1: #050a1c;
-      --bg-2: #0d1b45;
-      --card: rgba(255,255,255,0.08);
-      --line: rgba(255,255,255,0.2);
-      --text: #f4f7ff;
-      --muted: #c2cae4;
-      --accent: #57d6ff;
-      --maxw: 900px;
-      --radius: 16px;
+      --bg: #0b1220;
+      --card: #121b2d;
+      --text: #e7eefc;
+      --muted: #a9b7d4;
+      --line: #26344f;
+      --accent: #68c6ff;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: "Avenir Next", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 20% -20%, #1b2d52 0%, var(--bg) 55%);
       color: var(--text);
-      background:
-        radial-gradient(900px 500px at 90% -15%, rgba(87, 214, 255, 0.24), transparent 60%),
-        linear-gradient(160deg, var(--bg-1), var(--bg-2));
-      line-height: 1.6;
-      min-height: 100vh;
+      line-height: 1.55;
     }
-
     .wrap {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 28px 16px 48px;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 16px 40px;
     }
-
-    h1 {
-      margin: 0 0 6px;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      letter-spacing: -0.02em;
-    }
-
-    .updated {
-      margin: 0 0 18px;
-      color: var(--muted);
-    }
-
     .card {
+      background: rgba(18, 27, 45, 0.85);
       border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--card);
-      padding: 16px;
-      margin-bottom: 12px;
+      border-radius: 16px;
+      padding: 24px;
     }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: 1.08rem;
-    }
-
-    p, li {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    ul {
-      margin: 8px 0 0 18px;
-      padding: 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px dotted rgba(87,214,255,0.55);
-    }
+    h1 { margin: 0 0 10px; font-size: 2rem; }
+    h2 { margin: 24px 0 8px; font-size: 1.1rem; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { margin-top: 20px; font-size: 0.92rem; color: #8ea1c8; }
+    .note { color: #c8d6f4; }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: February 16, 2026</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="note">Booster Countdown</p>
 
-    <section class="card">
-      <h2>1. Who We Are</h2>
-      <p>SpaceX Countdown is an independent app that provides launch countdowns, launch history, widgets, notifications, and optional premium Starlink features.</p>
-    </section>
+      <h2>1. Who we are</h2>
+      <p>
+        Booster Countdown is an independent launch-tracking app. It is not affiliated with, endorsed by, or sponsored by any launch provider.
+      </p>
 
-    <section class="card">
-      <h2>2. Data We Collect</h2>
-      <p>We do not require account sign-up and do not collect personal profile data by default.</p>
+      <h2>2. Data we collect</h2>
+      <p>We do not collect personal data such as your name, email, contacts, photos, or precise location.</p>
+      <p>Data stored on your device may include:</p>
       <ul>
-        <li>Launch and satellite data is fetched from public APIs.</li>
-        <li>Cached app data is stored locally on your device for performance and offline fallback.</li>
-        <li>No third-party analytics SDK is included in the MVP release.</li>
+        <li>Cached launch and satellite feed data for offline viewing/performance.</li>
+        <li>Your app preferences (theme, notification settings, refresh choices).</li>
+        <li>Premium entitlement state (whether premium is unlocked).</li>
       </ul>
-    </section>
 
-    <section class="card">
-      <h2>3. Notifications</h2>
-      <p>If you enable launch alerts, notification scheduling data is stored locally on your device. You can disable notifications at any time in iOS Settings.</p>
-    </section>
+      <h2>3. In-App Purchases</h2>
+      <p>
+        Payments are processed by Apple via StoreKit. We do not receive or store your payment card details.
+      </p>
 
-    <section class="card">
-      <h2>4. In-App Purchases</h2>
-      <p>Premium purchases are processed by Apple through StoreKit. We do not receive or store your payment card details.</p>
-    </section>
+      <h2>4. Notifications</h2>
+      <p>
+        If you enable notifications, local reminders may be scheduled on your device for launch events.
+      </p>
 
-    <section class="card">
-      <h2>5. Data Sharing</h2>
-      <p>We do not sell your personal data. Data displayed in the app is sourced from public launch/satellite providers.</p>
-    </section>
+      <h2>5. Third-party data and links</h2>
+      <p>
+        The app retrieves publicly available aerospace data from third-party providers and may open external links (for example, streams or articles). Those third-party services have their own privacy policies.
+      </p>
 
-    <section class="card">
-      <h2>6. Data Retention</h2>
-      <p>Cached launch and Starlink data remains on your device until replaced by newer refreshes, app deletion, or system cleanup.</p>
-    </section>
+      <h2>6. Data sharing</h2>
+      <p>We do not sell your data and we do not share personal data with advertisers.</p>
 
-    <section class="card">
-      <h2>7. Children’s Privacy</h2>
-      <p>The app is not directed to children under 13 and does not knowingly collect personal information from children.</p>
-    </section>
+      <h2>7. Your choices</h2>
+      <ul>
+        <li>Disable notifications in the app or iOS settings.</li>
+        <li>Clear app data by deleting the app.</li>
+      </ul>
 
-    <section class="card">
-      <h2>8. Changes to This Policy</h2>
-      <p>We may update this policy periodically. The “Last updated” date above reflects the latest revision.</p>
-    </section>
+      <h2>8. Children’s privacy</h2>
+      <p>Booster Countdown does not knowingly collect personal data from children.</p>
 
-    <section class="card">
-      <h2>9. Contact</h2>
-      <p>Email: <a href="mailto:support@wardyapps.com">support@wardyapps.com</a></p>
-      <p>Support page: <a href="https://YOUR-DOMAIN.com/support.html">https://YOUR-DOMAIN.com/support.html</a></p>
-    </section>
-  </main>
+      <h2>9. Changes to this policy</h2>
+      <p>We may update this policy from time to time. The latest version is always published on this page.</p>
+
+      <h2>10. Contact</h2>
+      <p>
+        For privacy questions, use the support page:
+        <a href="support.html">Support</a>
+      </p>
+
+      <p class="meta">Last updated: February 22, 2026</p>
+    </div>
+  </div>
 </body>
 </html>
